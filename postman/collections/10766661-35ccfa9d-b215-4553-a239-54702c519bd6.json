@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "10766661-35ccfa9d-b215-4553-a239-54702c519bd6",
+		"name": "Event",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SaveImage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6301000c-5a88-4c75-94b1-c9438256ac08",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "10766661-e6da94e9-adb0-4c27-801f-5c780b3a2ae4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"muhammad agus maulana revised\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://presency.eienone.com/Event/Michelin/Pages/PgPhotoBooth.aspx/SaveImage",
+					"protocol": "https",
+					"host": [
+						"presency",
+						"eienone",
+						"com"
+					],
+					"path": [
+						"Event",
+						"Michelin",
+						"Pages",
+						"PgPhotoBooth.aspx",
+						"SaveImage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "History",
+			"id": "10766661-73c4199c-81ab-45d3-9ab9-6e2ed556d8a6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mock.endpoints/create",
+					"protocol": "https",
+					"host": [
+						"mock",
+						"endpoints"
+					],
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "085499e3-df87-4366-90c7-262f35328142",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2cfe1c05-ee64-4da4-be4b-1a60db9b03e5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
